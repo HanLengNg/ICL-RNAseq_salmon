@@ -35,6 +35,6 @@ Please create subdirectories to store each sample paired-end Illumina fastq file
 
 Ensure that the name of the subdirectories are the same name as the Illumina fastq files, i.e. R001/R001_1.fq.gz & R001/R001_2.fq.gz
 
-All fastqc, multiqc and salmon quant analyses are created in the subdirectories where the Illumina fastq files are kept.
+All fastqc, multiqc and salmon quant analyses are created in the same subdirectories where the Illumina fastq files are kept.
 
 Following salmon quant, DEseq2 can be subsequently performed (See ICL-DESeq2_script on my github page). Refer to the documentation [here](https://github.com/HanLengNg/ICL-DESeq2_script) for DESeq2 analysis.
