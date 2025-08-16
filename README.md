@@ -4,7 +4,7 @@ A bash script to perform Salmon on raw RNAseq fastq files
 # Main information
 The script is written to run on a PBS cluster that will submit multiple jobs in parallel for each sample
 
-Create a conda environment that contain the following packages:
+Create a conda environment containing the following packages:
 - fastqc/0.11.9
 - multiqc/1.12
 - trim-galore/0.6.7
