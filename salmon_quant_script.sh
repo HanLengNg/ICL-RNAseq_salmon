@@ -18,14 +18,14 @@ cd ./${base}
 
 # Run fastqc and multiqc
 mkdir ${base}_pretrim_fastqc
-fastqc -d ./${base} -o ${base}_pretrim_fastqc/ ${base}_1.fq.gz ${base}_2.fq.gz
+fastqc -d ./ -o ${base}_pretrim_fastqc/ ${base}_1.fq.gz ${base}_2.fq.gz
 mkdir ${base}_pretrim_multiqc
 multiqc -o ${base}_pretrim_multiqc/ ${base}_pretrim_fastqc/
 
 # Run trim_galore to remove adaptors from data
 trim_galore --gzip --paired ${base}_1.fq.gz ${base}_2.fq.gz
 mkdir ${base}_trimmed_fastqc
-fastqc -d ./${base} -o ${base}_trimmed_fastqc/ ${base}_1_val_1.fq.gz ${base}_2_val_2.fq.gz
+fastqc -d ./ -o ${base}_trimmed_fastqc/ ${base}_1_val_1.fq.gz ${base}_2_val_2.fq.gz
 mkdir ${base}_trimmed_multiqc
 multiqc -o ${base}_trimmed_multiqc/ ${base}_trimmed_fastqc/
 
